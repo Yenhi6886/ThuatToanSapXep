@@ -22,7 +22,7 @@ public class Sapxepchen {
         for(int i =1; i < list.length; i++) {
             int currentElement = list[i];
             int j;
-            for(j =i-1; j >= 0 && currentElement < list[j]; j--) {
+            for(j =i-1; j >= 0 && currentElement > list[j]; j--) { //giảm dần
                 list[j+1] = list[j];
             }
             list[j+1] = currentElement;
